@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Emerald & Amber "Professional Polish" Palette */
+  --color-academy-green-50: #f0fdf4;
+  --color-academy-green-100: #d1fae5;
+  --color-academy-green-150: #bbf7d0;
+  --color-academy-green-200: #a7f3d0;
+  --color-academy-green-500: #10b981;
+  --color-academy-green-600: #059669;
+  --color-academy-green-700: #047857;
+  --color-academy-green-750: #065f46;
+  --color-academy-green-800: #065f46;
+  --color-academy-green-850: #064e3b;
+  --color-academy-green-900: #064e3b;
+
+  --color-academy-yellow-50: #fffbeb;
+  --color-academy-yellow-100: #fef3c7;
+  --color-academy-yellow-200: #fde68a;
+  --color-academy-yellow-400: #fbbf24;
+  --color-academy-yellow-405: #fbbf24;
+  --color-academy-yellow-500: #f59e0b;
+  --color-academy-yellow-600: #d97706;
+  --color-academy-yellow-700: #b45309;
+  --color-academy-yellow-800: #92400e;
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom background patterns for a prestigious feel of Professional Polish */
+.bg-education-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(5, 150, 105, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(5, 150, 105, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background-image: radial-gradient(circle at top right, rgba(245, 158, 11, 0.06) 0%, transparent 60%);
+}
+
+/* Beautiful custom animations for active cards */
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.015); }
+}
+
+.animate-hover-subtle:hover {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}

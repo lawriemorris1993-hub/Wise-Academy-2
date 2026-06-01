@@ -1,0 +1,6 @@
+{
+  "name": "Wise Academy",
+  "description": "Excellence in Education - High-quality ZIMSEC O & A Level tuition centre based in Zimbabwe offering extra lessons, full-time schooling, and night school.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
